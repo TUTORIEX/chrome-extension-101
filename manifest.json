@@ -23,6 +23,6 @@
     "service_worker": "background.js"
   },
 
-  "permissions": ["scripting", "tabs", "activeTab","bookmarks"],
+  "permissions": ["scripting", "tabs", "activeTab","bookmarks", "contextMenus"],
   "host_permissions": ["https://*"]
 }

@@ -5,6 +5,11 @@ function runFunction() {
   button.addEventListener("click", clickFunction);
 
   function clickFunction() {
-    document.body.style.backgroundColor = "blue";
+    // document.body.style.backgroundColor = "blue";
+    // chrome.runtime.sendMessage({ message: "just-a-message" });
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      console.log(tabs[0]);
+    });
+
   }
 }
